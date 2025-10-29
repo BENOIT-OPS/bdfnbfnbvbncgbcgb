@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Avis de décès — Exemple</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Annuaire d'avis</h1>
+      <nav class="breadcrumb">
+        <a href="#">Accueil</a> › <a href="#">Haute-Savoie</a> › <span>Chamonix-Mont-Blanc</span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <aside class="sidebar">
+      <section class="search-box">
+        <h2>Recherche</h2>
+        <input id="search" type="search" placeholder="Nom, date, mot-clé..." />
+      </section>
+
+      <section class="filters">
+        <h2>Filtres</h2>
+        <label><input type="checkbox" value="recent" checked> Derniers 30 jours</label><br>
+        <label><input type="checkbox" value="famille"> Mention famille</label>
+      </section>
+    </aside>
+
+    <section class="content">
+      <div id="list" class="cards">
+        <!-- Cartes d'avis générées par JS -->
+      </div>
+
+      <nav class="pagination" aria-label="Pagination">
+        <button id="prev">« Précédent</button>
+        <span id="page-info">Page 1</span>
+        <button id="next">Suivant »</button>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Exemple éducatif — contenu fictif</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
